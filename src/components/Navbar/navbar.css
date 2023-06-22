@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar--img {
+    width: 50px;
+}
+
+.navbar--img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.navbar--links {
+    display: flex;
+    background-color: #f1f1f1;
+    padding: 10px 0px 10px 30px;
+    border-radius: 5px;
+}
+
+.navbar--links:hover {
+    opacity: 0.8;
+}
+
+.navbar-li {
+    margin-right: 30px;
+    list-style-type: none;
+    color: #2c2c2b;
+}
+
+.navbar-li:hover {
+    color: #8b8a8a;
+    cursor: pointer;
+}
