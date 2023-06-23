@@ -1,8 +1,21 @@
+@keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border: 1px solid red;
+
+    position: relative;
 }
 
 .navbar--img {
@@ -34,4 +47,51 @@
 .navbar-li:hover {
     color: #8b8a8a;
     cursor: pointer;
+}
+
+.navbar--mobile {
+    font-size: 30px;
+}
+
+.navbar--mobile_container {
+    display: none;
+}
+
+.navbarmobile--links {
+    display: none;
+
+    background-color:  #f1f1f1;
+}
+
+.navbar--mobile {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .navbar--links {
+        display: none;
+    }
+    .navbar--mobile_container,
+    .navbar--mobile {
+        display: block;
+    }
+    
+    .navbarmobile--links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px 10px 30px;
+        top: 50px;
+        right: 40px;
+        border-radius: 10px;
+        animation: slideUp 0.5s ease-in-out;
+    }
+
+    .navbar-li {
+        padding-bottom: 5px;
+    }
+
+    .navbar--img {
+        width: 30px;
+    }
 }
