@@ -1,6 +1,6 @@
 .HeroSection {
     display: inline-block;
-    width: 90%;
+    width: 1750px;
     height: 500px;
     margin-top: 20px;
     margin-left: 90px;
@@ -70,4 +70,9 @@
 .left-arrow:hover {
     font-size: 50px;
     transition: font-size 0.2s ease-in;
+}
+
+.best__student {
+    width: 500px;
+    border-radius: 5px;
 }

@@ -10,15 +10,23 @@ import { useRef } from "react";
 export default function index() {
     const scrollRef = useRef(null);
 
-    function scroll() {
-        // making the scroll 
+    function scroll(direction) {
+
+        console.log("clicked")
+       const { current } = scrollRef;
+
+       if (direction === "left") {
+        current.scrollLeft -= 1750
+       } else {
+        current.scrollLeft += 1750
+       }
     }
 
     return (
-        <section className="HeroSection">
+        <section className="HeroSection" ref={scrollRef}>
             <img src={Tour} alt="background image" className="background" />
             { HeroSection.map((item) => (
-                <div className="HeroSection--wrapper" key={item.index} ref={scrollRef}>
+                <div className="HeroSection--wrapper" key={item.index} >
                     <div className="HeroSection--content_wrapper">
                         <h1 className="HeroSection_wrapper-title">{ item.title }</h1>
                         <p className="HeroSection_content">
