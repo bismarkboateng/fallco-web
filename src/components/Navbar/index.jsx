@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./navbar.css";
+import "./Navbar.css";
 import KnustLogo from "../../assets/images/knust-logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";

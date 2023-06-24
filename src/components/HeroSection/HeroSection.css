@@ -1,0 +1,73 @@
+.HeroSection {
+    display: inline-block;
+    width: 90%;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 90px;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: inherit;
+    z-index: -1;
+    height: inherit;
+    
+}
+
+.HeroSection--wrapper {
+    position: relative;
+    width: 100%;
+    height: inherit;
+    display: inline-flex;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.HeroSection--content_wrapper {
+    background-color: white;
+
+    padding: 0px 10px 10px 10px;
+    border-radius: 5px;
+    width: 550px;
+
+}
+
+.Graduation__video {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: rgb(55, 55, 221);
+
+    color: #fff;
+    border-radius: 5px;
+}
+
+.right-arrow {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    margin-right: 10px;
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+
+.left-arrow {
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    margin-right: 10px;
+    top: 50%;
+    left: 0;
+    cursor: pointer;
+}
+
+
+.right-arrow:hover,
+.left-arrow:hover {
+    font-size: 50px;
+    transition: font-size 0.2s ease-in;
+}
