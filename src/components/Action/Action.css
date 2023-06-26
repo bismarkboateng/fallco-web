@@ -1,0 +1,28 @@
+.action--container {
+    width: 40%;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.action--btn {
+    width: 75%;
+    padding: 33px 30px;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    background-color: rgb(92, 92, 245);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.action--btn_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.action--header {
+    color: rgb(92, 92, 245);
+}
