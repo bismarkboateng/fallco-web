@@ -1,0 +1,22 @@
+.announcement--container {
+
+
+    width: 40%;
+    margin: 2px 2px;
+    text-align: center;
+}
+
+.announcement--header {
+    color: rgb(92, 92, 245);
+}
+
+.announcement--btn {
+    background-color: rgb(75, 75, 202);
+    color: #fff;
+    padding: 2px;
+    margin-bottom: 2px;
+    border-radius: 3px;
+
+    cursor: pointer;
+
+}
