@@ -12,10 +12,11 @@
     border: none;
     outline: none;
     margin-bottom: 5px;
-    background-color: rgb(92, 92, 245);
+    background-color: #271e3d;
     border-radius: 5px;
     color: #fff;
     font-size: 18px;
+    font-weight: 900;
 }
 
 .action--btn_container {
@@ -24,5 +25,5 @@
 }
 
 .action--header {
-    color: rgb(92, 92, 245);
+    color: #271e3d;
 }

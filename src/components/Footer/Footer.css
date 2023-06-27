@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    background-color: #271e3d;
+    margin: auto;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h2 {
+    font-size: 1.62rem;
+    color: #fff;
+}
+
+.footer--div {
+    height: 5px;
+    background-color: #005d8f;
+    width: 1.3%;
+}

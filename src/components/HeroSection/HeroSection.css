@@ -40,10 +40,13 @@
     border: none;
     outline: none;
     padding: 10px 20px;
-    background-color: rgb(55, 55, 221);
+    background-color: #271e3d;
 
     color: #fff;
     border-radius: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .right-arrow {

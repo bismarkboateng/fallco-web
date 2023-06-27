@@ -7,16 +7,20 @@
 }
 
 .announcement--header {
-    color: rgb(92, 92, 245);
+    color: #271e3d;
 }
 
 .announcement--btn {
-    background-color: rgb(92, 92, 245);
+    background-color: #271e3d;
     color: #fff;
     padding: 2px;
     margin-bottom: 2px;
-    border-radius: 3px;
+    border-radius: 5px;
 
     cursor: pointer;
 
+}
+
+.announcement--btn_title {
+    font-weight: 900;
 }
