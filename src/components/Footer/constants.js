@@ -1,6 +1,6 @@
-const Links = [
+export const Links = [
     {
-        name: "field trips",
+        name: "Field trips",
         index: 0
     },
     {
@@ -14,7 +14,7 @@ const Links = [
     {
         name: "Graduation",
         index: 0
-    },
+    },  
     {
         name: "Department",
         index: 0
