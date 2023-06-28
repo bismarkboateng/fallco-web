@@ -1,0 +1,58 @@
+.article--content {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+}
+
+.article--header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1F1F1;
+    height: 200px;
+    border-radius: 5px;
+    color: #2c2c2b;
+}
+
+.articles {
+    margin-top: 30px;
+    width: 90%;
+}
+
+.article--image { 
+    width: 300px;
+    border-radius: 5px;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.article--image,
+.article--title {
+    cursor: pointer;
+}
+
+.read--article {
+    cursor: pointer;
+
+}
+
+.read--article:hover {
+    text-decoration: underline;
+
+    font-weight: 600;
+}
+
+.article--title {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
