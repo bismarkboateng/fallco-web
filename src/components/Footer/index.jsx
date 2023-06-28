@@ -1,6 +1,6 @@
 import "./Footer.css"
 import { Links } from "./constants"
-
+import { Link } from "react-router-dom"
 
 
 
@@ -11,7 +11,9 @@ export default function index() {
             <div className="footer--div"/>
             <ul className="footer--unordered">
                 { Links.map((link) => (
-                    <li className="footer--links" key={link.index}>{ link.name } </li>
+                    <Link to={link.link}>
+                        <li className="footer--links" key={link.index}>{ link.name } </li>
+                    </Link>
                 )) }
             </ul>
 

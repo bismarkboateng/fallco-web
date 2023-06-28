@@ -71,6 +71,19 @@
     display: none;
 }
 
+.link {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: none;
+}
+
+
+.pending {
+    font-weight: normal;
+}
+
 @media screen and (max-width: 550px) {
     .navbar--links {
         display: none;

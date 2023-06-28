@@ -7,3 +7,7 @@ body {
     padding: 0;
     font-family: Arial,Helvetica,sans-serif;
 }
+
+.app--content {
+    height: 120vh;
+}

@@ -3,6 +3,8 @@ import "./Navbar.css";
 import KnustLogo from "../../assets/images/knust-logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
+import { Link } from "react-router-dom";
+import NavLinks from "./NavLinks";
 
 
 
@@ -16,12 +18,10 @@ export default function index() {
     return (
         <>
             <nav className="navbar">
-                <img src={KnustLogo} alt="knust Logo" className="navbar--img" />
+                <Link className="link" to="/"><img src={KnustLogo} alt="knust Logo" className="navbar--img" /></Link>
 
                 <ul className="navbar--links">
-                    <li className="navbar-li">Articles</li>
-                    <li className="navbar-li">Dep.Info</li>
-                    <li className="navbar-li">Class Alloc</li>
+                    <NavLinks />
                 </ul>
 
                 <div onClick={toggleMobileMenu} className="navbar--mobile_container">
@@ -30,9 +30,7 @@ export default function index() {
 
                 { mobileMenu && (
                     <ul className="navbarmobile--links">
-                        <li className="navbar-li">Articles</li>
-                        <li className="navbar-li">Dep.Info</li>
-                        <li className="navbar-li">Class Alloc</li>
+                        <NavLinks />
                     </ul>
                 )}
             </nav>
