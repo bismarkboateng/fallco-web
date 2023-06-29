@@ -1,6 +1,10 @@
 import "./Department.css"
 import { Faculty, Dean } from "../../assets"
 import Div from "../../components/Div"
+import { News } from "../../components"
+
+
+
 
 export default function index() {
     return (
@@ -52,6 +56,7 @@ export default function index() {
                 </p>
             </div>
 
+            <News />
         </section>
     )
 }

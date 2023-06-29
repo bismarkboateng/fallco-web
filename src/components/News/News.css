@@ -1,0 +1,17 @@
+.department__news-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color:  #F1F1F1;
+    display: flex;
+    gap: 20px;
+}
+
+.department__news-image {
+    border-radius: 5px;
+    width: 300px;
+}
+
+.department__news__wrapper {
+    display: flex;
+    flex-direction: column;
+}
