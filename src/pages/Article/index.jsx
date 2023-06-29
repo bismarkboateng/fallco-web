@@ -1,6 +1,7 @@
 import "./Article.css"
 import Div from "../../components/Div";
 import { Articles } from "./constants";
+import { Link } from "react-router-dom";
 
 
 export default function index() {
@@ -21,7 +22,9 @@ export default function index() {
                         <img src={article.image} alt="article image" className="article--image" />
                         <div className="article--info">
                             <h5 className="article--date">{ article.Date }</h5>
-                            <div className="article--title">{ article.Title }</div>
+                            <Link to="/article-detail" style={{ textDecoration: "none"}}>
+                                <div className="article--title">{ article.Title }</div>
+                            </Link>
                             <Div />
                             <p className="arti--content">{ article.content } </p>
                             <p className="read--article">

@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Footer } from "./components";
+import { Navbar, Footer, ArticleDetail } from "./components";
 import { Article, Department, Locateclass, Home } from "./pages";
 
 
@@ -12,6 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="articles/" element={<Article />} />
+          <Route path="/article-detail" element={<ArticleDetail />} />
           <Route path="department/" element={<Department />} />
           <Route path="locate-class/" element={<Locateclass />} />
         </Routes>

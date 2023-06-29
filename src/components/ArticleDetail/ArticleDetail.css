@@ -1,0 +1,42 @@
+.article--detail__content {
+    width: 85%;
+    margin: auto;
+}
+
+.article-detail {
+    margin-top: 55px;
+    margin-left: 15%;
+    width: 600px;
+}
+
+.article--detail__image {
+    width: inherit;
+    border-radius: 5px;
+}
+
+.article--text {
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 28px;
+
+}
+
+.article--most__read {
+    color: #005d8f;
+    background-color: #f1f1f1;
+    width: 400px;
+    padding: 20px 20px;
+    border-left: 3px solid #005d8f;
+    cursor: pointer;
+}
+
+.article__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    position: sticky;
+}
+
+.mostread__wrapper {
+    margin-top: 100px;
+}
