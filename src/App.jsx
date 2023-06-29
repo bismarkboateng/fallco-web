@@ -11,10 +11,10 @@ export default function App() {
       <div className="app--content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="articles/" element={<Article />} />
+          <Route path="/articles" element={<Article />} />
           <Route path="/article-detail" element={<ArticleDetail />} />
-          <Route path="department/" element={<Department />} />
-          <Route path="locate-class/" element={<Locateclass />} />
+          <Route path="/department" element={<Department />} />
+          <Route path="/locate-class" element={<Locateclass />} />
         </Routes>
       </div>
       <Footer />

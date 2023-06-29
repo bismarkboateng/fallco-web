@@ -1,0 +1,74 @@
+.department__wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+
+}
+
+.department__hidden-background {
+    width: 100%;
+    height: 180px;
+    background-color: #271e3d;
+    margin-bottom: 0;
+}
+
+.department-image-content__wrapper {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.department__name {
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+    width: 200px;
+    background-color: #271e3d;
+    right: 150px;
+    top: 350px;
+    padding: 20px 25px;
+}
+
+.department__image {
+    width: 97.5%;
+    height: 400px;
+    position: absolute;
+    left: 20px;
+    z-index: 10;
+    top: 0;
+}
+
+.department__about-section {
+    background-color: #F1F1F1;
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.department__about-content {
+    margin-top: 100px;
+}
+
+.department__text {
+    font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.department__dean {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+    gap: 20px;
+    background-color: #F1F1F1;
+    padding: 10px;
+}
+
+.deparment__dean-image {
+    border-radius: 5px;
+}
