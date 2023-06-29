@@ -1,10 +1,13 @@
+import { useState } from "react"
 import "./Locateclass.css"
+import { TimeTable } from "../../components"
 
 
 export default function index() {
+    const [ openTimeTable, setOpenTimeTable ] = useState(false)
 
     function handleOpenModal() {
-        console.log("Open Time Table as Modal")
+        setOpenTimeTable((prevMode) => !prevMode)
     }
 
     return (
@@ -21,6 +24,7 @@ export default function index() {
                 </p>
             </div>
 
+            { openTimeTable && <TimeTable /> }
         </section>
     )
 }
