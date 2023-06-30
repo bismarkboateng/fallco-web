@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "./Locateclass.css"
-import { TimeTable } from "../../components"
+import { TimeTable, AvailableClass } from "../../components"
+
 
 
 export default function index() {
@@ -22,7 +23,9 @@ export default function index() {
                 <p className="class--size">
                     Class Size: <span className="size">257</span>
                 </p>
+                <div className="locate--class__wrapper"/>
             </div>
+            <AvailableClass />    
 
             { openTimeTable && <TimeTable /> }
         </section>
