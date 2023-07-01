@@ -1,0 +1,26 @@
+.RepLogin__submit-btn {
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #271e3d;;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.RepLogin--select_fields {
+    padding: 5px 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(170, 168, 168);
+    color: #fff;
+}
+
+.RepLogin--formId {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border: 1px solid #271e3d;
+    border-radius: 4px;
+}

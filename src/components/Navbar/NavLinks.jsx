@@ -21,6 +21,13 @@ export default function NavLinks() {
             <li className="navbar-li">Dep.Info</li>    
         </NavLink>
 
+        <NavLink className="active" to="/class-rep-login" style={({isActive}) => {
+                return { fontWeight: isActive ? "bold" : "",} 
+            }}
+        >
+            <li className="navbar-li">Rep Login</li>    
+        </NavLink>
+
         <NavLink className="active" to="/locate-class"
             style={({isActive}) => {
                 return { fontWeight: isActive ? "bold" : "",}
