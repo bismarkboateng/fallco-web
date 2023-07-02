@@ -18,15 +18,18 @@ export default function index() {
         console.log(event.target.value)
     }
     
-    function onHandleFormSubmit() {
+    function onHandleFormSubmit(event) {
+        event.preventDefault();
         console.log("Handle Form submit")
     }
 
     return (
         <div className="RepLogin--component">
             <h2 className="RepLogin--header">Class Rep Login</h2>
+            <div className="RepLogin--header__underline"/>
 
-            <form className="RepLogin--form" >
+            <form className="RepLogin--form" onSubmit={onHandleFormSubmit}>
+                <label className="input--title">Rep ID</label> <br /> <br />
                 <input 
                     className="RepLogin--formId"
                     value={loginDetails.RepId}
