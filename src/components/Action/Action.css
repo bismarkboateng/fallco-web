@@ -27,3 +27,17 @@
 .action--header {
     color: #271e3d;
 }
+
+@media screen and (max-width: 550px) {
+    .action--btn {
+       width: 100%;
+       padding: 5px;
+       border-radius: 3px;
+       font-weight: 300;
+       font-size: 10px;
+    }
+
+    .action--header {
+        font-size: 10px;
+    }
+}

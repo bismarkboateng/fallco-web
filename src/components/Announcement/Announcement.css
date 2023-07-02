@@ -24,3 +24,14 @@
 .announcement--btn_title {
     font-weight: 900;
 }
+
+@media screen and (max-width: 550px) {
+    .announcement--header {
+        font-size: 10px;
+    }
+
+    .announcement--btn {
+        width: 100%;
+        font-size: 8px;
+    }
+}
