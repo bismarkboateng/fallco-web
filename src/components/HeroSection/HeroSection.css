@@ -7,13 +7,11 @@
     overflow: hidden;
 }
 
-.background {
+.background--heroSection {
     position: absolute;
     width: 100%;
     z-index: -1;
-    height: inherit;
-    width: 100%;
-    
+    height: inherit;    
 }
 
 .HeroSection--wrapper {
@@ -79,4 +77,58 @@
 .best__student {
     width: 500px;
     border-radius: 5px;
+}
+
+@media  screen and (max-width: 550px) {
+
+    .HeroSection {
+        display: inline-block;
+        overflow: hidden;
+
+        font-size: 12px;
+        line-height: 14px;
+        width: 90%;
+    }
+
+    .background--heroSection {
+        position: absolute;
+        z-index: -1;
+        width: 90%;
+        height: 200px;
+        padding: 0;
+        margin: auto;
+
+    }
+
+    .HeroSection--wrapper {
+        display: flex;
+        flex-direction: row;
+        /* overflow: hidden; */
+        gap: 5px;
+
+        border: 1px solid red;
+        width: 100%;
+        height: 200px;
+        margin: auto;
+    }
+
+    .best__student {
+        width: 100px;
+    }
+
+    .HeroSection--content_wrapper {
+        /* width: 200px;
+        height: 200px; */
+
+    }
+
+    .HeroSection_wrapper-title {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .Graduation__video {
+        font-size: 10px;
+        padding: 10px;
+    }
 }

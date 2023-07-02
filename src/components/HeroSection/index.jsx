@@ -24,7 +24,7 @@ export default function index() {
 
     return (
         <section className="HeroSection" ref={scrollRef}>
-            <img src={Tour} alt="background image" className="background" />
+            <img src={Tour} alt="background image" className="background--heroSection" />
             { HeroSection.map((item) => (
                 <div className="HeroSection--wrapper" key={item.index} >
                     <div className="HeroSection--content_wrapper">
@@ -36,7 +36,7 @@ export default function index() {
                         {item.title}
                         </p>
                         <button className="Graduation__video">
-                            Graduation Video
+                            Grad. Video
                         </button>
                     </div>
 

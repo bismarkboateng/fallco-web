@@ -38,7 +38,7 @@ export default function index() {
                 <select className="RepLogin--select_fields"
                     onChange={onHandleSelectChange}
                 >
-                    <h4 className="RepLogin--select_fields-title">Select Department</h4>
+                    {/* <h4 className="RepLogin--select_fields-title">Select Department</h4> */}
                     <option>COE</option>
                     <option>TE</option>
                     <option>EE</option>

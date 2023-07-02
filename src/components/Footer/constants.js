@@ -12,16 +12,16 @@ export const Links = [
     {
         name: "Classes",
         link: "/locate-class",
-        index: 0
+        index: 2
     },
     {
         name: "Graduation",
         link: "",
-        index: 0
+        index: 3
     },  
     {
         name: "Department",
         link: "/department",
-        index: 0
+        index: 4
     }
 ]
