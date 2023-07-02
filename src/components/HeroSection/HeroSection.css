@@ -83,17 +83,16 @@
 
     .HeroSection {
         display: inline-block;
-        overflow: hidden;
 
         font-size: 12px;
         line-height: 14px;
-        width: 90%;
+        width: 100%;
     }
 
     .background--heroSection {
         position: absolute;
         z-index: -1;
-        width: 90%;
+        width: inherit;
         height: 200px;
         padding: 0;
         margin: auto;
@@ -103,13 +102,11 @@
     .HeroSection--wrapper {
         display: flex;
         flex-direction: row;
-        /* overflow: hidden; */
         gap: 5px;
-
-        border: 1px solid red;
         width: 100%;
-        height: 200px;
+        height: 186px;
         margin: auto;
+        overflow-y: hidden;
     }
 
     .best__student {
@@ -117,18 +114,34 @@
     }
 
     .HeroSection--content_wrapper {
-        /* width: 200px;
-        height: 200px; */
+        width: 50%;
+        height: 80%;
 
     }
 
     .HeroSection_wrapper-title {
-        font-size: 12px;
+        font-size: 8px;
         line-height: 13px;
     }
 
     .Graduation__video {
-        font-size: 10px;
-        padding: 10px;
+        font-size: 8px;
+        padding: 2px 5px;
+        border-radius: 2px;
+    }
+
+    .HeroSection_content {
+        font-size: 8px;
+        line-height: 8px;
+    }
+
+    .left-arrow,
+    .right-arrow {
+        font-size: 15px;
+    }
+
+    .right-arrow:hover,
+    .left-arrow:hover {
+        font-size: 14px;
     }
 }

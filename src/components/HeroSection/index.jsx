@@ -47,6 +47,7 @@ export default function index() {
                     <AiOutlineCaretLeft onClick={() => scroll("left")} className="left-arrow" />
                 </div>
             ))}
+
         </section>
     )
 }
