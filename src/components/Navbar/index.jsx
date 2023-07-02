@@ -18,7 +18,9 @@ export default function index() {
     return (
         <>
             <nav className="navbar">
-                <Link className="link" to="/"><img src={KnustLogo} alt="knust Logo" className="navbar--img" /></Link>
+                <Link className="link" to="/">
+                    <img src={KnustLogo} alt="knust Logo" className="navbar--img" />
+                </Link>
 
                 <ul className="navbar--links">
                     <NavLinks />
