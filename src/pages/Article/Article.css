@@ -43,7 +43,7 @@
 
 .read--article {
     cursor: pointer;
-
+    transition: text-decoration 0.12s;
 }
 
 .read--article:hover {
@@ -55,4 +55,14 @@
 .article--title {
     font-size: 23px;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .article--header {
+        height: 150px;
+    }
 }
