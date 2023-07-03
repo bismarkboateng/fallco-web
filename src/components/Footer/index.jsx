@@ -11,7 +11,7 @@ export default function index() {
             <Div />
             <ul className="footer--unordered">
                 { Links.map((link) => (
-                    <Link to={link.link} key={link.index}>
+                    <Link style={{ textDecoration: "none"}} to={link.link} key={link.index}>
                         <li className="footer--links" key={link.index}>{ link.name } </li>
                     </Link>
                 )) }
