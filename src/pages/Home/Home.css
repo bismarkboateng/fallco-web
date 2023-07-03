@@ -1,5 +1,5 @@
 .announcement--action_block {
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 40px;
     
@@ -15,7 +15,6 @@
         font-size: 11px;
 
         flex-direction: column;
-        border: 1px solid red;
         justify-content: center;
         align-items: center;
     }

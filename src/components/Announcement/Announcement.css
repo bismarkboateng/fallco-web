@@ -27,11 +27,16 @@
 
 @media screen and (max-width: 550px) {
     .announcement--header {
-        font-size: 10px;
+        font-size: 14px;
+    }
+    
+    .announcement--container {
+        width: 100%;
     }
 
     .announcement--btn {
         width: 100%;
-        font-size: 8px;
+        font-size: 10px;
+        padding: 5px 20px;
     }
 }
