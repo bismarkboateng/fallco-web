@@ -41,3 +41,11 @@
     background-color: #271e3d;
     margin-bottom: 30px;
 }
+
+
+
+@media screen and (max-width: 550px) {
+    .timetable--btn {
+        width: 180px;
+    }
+}

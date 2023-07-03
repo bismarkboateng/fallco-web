@@ -54,3 +54,10 @@
     margin: auto;
     margin-bottom: 50px;
 }
+
+
+@media screen and (max-width: 550px) {
+    .RepLogin--component {
+        width: 100%;
+    }
+}

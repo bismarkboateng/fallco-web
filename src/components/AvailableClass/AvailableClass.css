@@ -24,7 +24,7 @@
     margin-bottom: 100px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 50px;
 }
 
@@ -45,4 +45,25 @@
     border-radius: 10px;
     background-color: rgb(47, 47, 226);
     color: #fff;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .availableclass__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classess__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .available__class,
+    .ongoing__class {
+        width: 330px;
+        text-align: center;
+    }
 }

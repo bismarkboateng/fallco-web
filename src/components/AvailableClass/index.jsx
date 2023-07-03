@@ -21,7 +21,7 @@ export default function index() {
                 {ClassSection.map((each_class) => (
                     <div className={`${each_class.ongoing ? `ongoing__class` : 'available__class'} class`}>
                         <h1 className="venue">{ each_class.venue }</h1>
-                        <p className="class">{ each_class.classSize }</p>
+                        <h1 className="class">{ each_class.classSize }</h1>
                     </div>
                 ))}
             </section>

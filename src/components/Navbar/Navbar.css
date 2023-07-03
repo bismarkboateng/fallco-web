@@ -109,12 +109,13 @@
         right: 40px;
         border-radius: 10px;
         animation: slideUp 0.5s ease-in-out;
-        font-size: 11px;
+        font-size: 20px;
         text-align: center;
     }
 
     .navbar-li {
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .navbar--img {
