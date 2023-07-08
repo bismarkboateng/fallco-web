@@ -41,7 +41,7 @@
 .department__about-section {
     background-color: #F1F1F1;
     height: 650px;
-
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +50,7 @@
 
 .department__about-content {
     margin-top: 100px;
+
 }
 
 .department__text {
@@ -75,20 +76,16 @@
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
     .department__image {
-        height: 100%;
+        /* height: 2000px; */
         left: 3px;
         top: 4px;
     }
 
     .department__wrapper {
-        /* width: 80%; */
         font-size: 12px;
         padding: 10px;
-        /* margin-right: 5px; */
-        /* gotta work on this, for the div to center */
-        /* border: 1px solid red; */
     }
 
     .department__about-content {
@@ -113,5 +110,60 @@
 
     .department__text {
         padding: 5px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .department__dean {
+        display: flex;
+        flex-direction: column;
+    }
+    .deparment__dean-image {
+        height: 300px;
+    }
+
+    .department__image {
+        height: 300px;
+        left: 8px;
+    }
+
+    .department__name {
+        top: 250px;
+        right: 50px;
+    }
+
+    .department__about-section {
+        padding: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .department__dean {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .department__image {
+        height: 300px;
+        left: 8px;
+    }
+
+    .department__name {
+        right: 30px;
+        top: 260px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .department__dean {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .department__text {
+        padding: 1px;
     }
 }

@@ -20,7 +20,7 @@
 
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
     .department__news-section {
         display: flex;
         flex-direction: column;
@@ -30,4 +30,28 @@
         width: 100%;
         object-fit: cover;
     }
+}
+
+@media screen and (max-width: 769px) {
+    .department__news-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .department__news-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .department__news-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }

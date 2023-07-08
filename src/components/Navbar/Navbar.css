@@ -20,6 +20,7 @@
     top: 0;
     z-index: 100;
     background-color: #fff;
+    width: 100%;
 }
 
 .navbar--img {
@@ -84,10 +85,9 @@
     font-weight: normal;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 576px) {
 
     .navbar {
-        /* width: 323px; */
         width: 100%;
         justify-content: space-around;
     }
@@ -120,5 +120,12 @@
 
     .navbar--img {
         width: 30px;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .navbar {
+        width: 100%;
     }
 }
