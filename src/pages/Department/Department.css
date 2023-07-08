@@ -72,3 +72,46 @@
 .deparment__dean-image {
     border-radius: 5px;
 }
+
+
+
+@media screen and (max-width: 550px) {
+    .department__image {
+        height: 100%;
+        left: 3px;
+        top: 4px;
+    }
+
+    .department__wrapper {
+        /* width: 80%; */
+        font-size: 12px;
+        padding: 10px;
+        /* margin-right: 5px; */
+        /* gotta work on this, for the div to center */
+        /* border: 1px solid red; */
+    }
+
+    .department__about-content {
+        margin-top: 0px;
+    }
+
+    .department__name { 
+        padding: 10px 5px;
+        width: 100px;
+
+        right: 15px;
+        top: 150px;
+    }
+
+    .department__dean {
+        flex-direction: column;
+    }
+
+    .deparment__dean-image {
+        width: 100%;
+    }
+
+    .department__text {
+        padding: 5px;
+    }
+}
