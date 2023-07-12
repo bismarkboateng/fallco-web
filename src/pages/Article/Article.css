@@ -62,7 +62,35 @@
         flex-direction: column;
     }
 
+    .articles {
+        margin: auto;
+    }
+
+    .article--image {
+        width: 100%;
+    }
+
     .article--header {
         height: 150px;
+        width: 75%;
+        margin-left: 10px;
+    }
+
+
+    .mostread__wrapper {
+        width: 230px;
+        margin-left: 10px;
+
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .articles {
+        margin: auto;
+    }
+
+    .article {
+        margin-top: 10px;
+        flex-direction: column;
     }
 }

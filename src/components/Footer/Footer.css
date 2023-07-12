@@ -53,10 +53,25 @@
 
     .footer--unordered {
         flex-direction: column;
-        gap: 8px;
+        align-items: center;
+        gap: 10px;
     }
 
     .footer--links {
         font-weight: 400;
+    }
+
+    .footer--divA {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer {
+        width: 100%;
+    }
+
+    .footer--unordered {
+        gap: 50px;
     }
 }

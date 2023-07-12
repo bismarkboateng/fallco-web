@@ -43,40 +43,10 @@
 
 
 @media screen and (max-width: 550px) {
-    .article--detail__image {
-        width: inherit;
-    }
+  
+}
 
+
+@media screen and (max-width: 950px) {
     
-    .article__wrapper {
-        flex-direction: column;
-        /* align-items: center; */
-        justify-content: center;
-        width: 350px;
-        gap: 30px;
-    }
-
-    .article-detail {
-        margin-left: 3px;
-        width: inherit;
-    }
-    
-    .article--text {
-        width: inherit;
-    }
-
-    .mostread__wrapper {
-        width: 320px;
-    }
-
-    .article--most__read {
-        width: 100%;
-    }
-
-    .article--header {
-        margin-top: 30px;
-        font-size: 15px;
-        text-align: center;
-        padding: 5px 8px;
-    }
 }
