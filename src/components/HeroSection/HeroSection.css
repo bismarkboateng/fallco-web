@@ -1,10 +1,12 @@
 .HeroSection {
-    display: inline-block;
-    width: 1750px;
+    display: inline-flex;
+    width: 100%;
     height: 500px;
     margin-top: 20px;
     /* margin-left: 90px; */
     overflow: hidden;
+
+    border: 1px solid red;
 }
 
 .background--heroSection {
@@ -16,13 +18,14 @@
 
 .HeroSection--wrapper {
     position: relative;
-    width: 100%;
+    width: inherit;
     height: inherit;
     display: inline-flex;
-    overflow: hidden;
     justify-content: space-around;
     align-items: center;
     padding: 20px 30px;
+
+    border: 1px solid red;
 }
 
 .HeroSection--content_wrapper {
@@ -30,7 +33,7 @@
 
     padding: 0px 10px 10px 10px;
     border-radius: 5px;
-    width: 550px;
+    width: 50%;
 
 }
 
@@ -75,7 +78,7 @@
 }
 
 .best__student {
-    width: 500px;
+    width: 50%;
     border-radius: 5px;
 }
 
