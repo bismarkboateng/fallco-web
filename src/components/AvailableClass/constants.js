@@ -1,68 +1,54 @@
-export const ClassSection = [
+export const petroleumBuilding = [
     {
-        venue: "PB001",
-        ongoing: false,
-        classSize: 200,
-        index: 0
+        class_name: "PB001",
+        class_size: 120,
+        is_available: true,
+        index: 0,
     },
     {
-        venue: "PB020",
-        ongoing: true,
-        classSize: 215,
-        index: 1
+        class_name: "PB020",
+        class_size: 100,
+        is_available: false,
+        index: 1,
     },
     {
-        venue: "PB014",
-        ongoing: true,
-        classSize: 300,
-        index: 2
+        class_name: "PB014",
+        class_size: 90,
+        is_available: true,
+        index: 2,
     },
     {
-        venue: "PB018",
-        ongoing: false,
-        classSize: 100,
+        class_name: "PB018",
+        class_size: 100,
+        is_available: true,
         index: 3
     },
-    {
-        venue: "PB001",
-        ongoing: false,
-        classSize: 450,
-        index: 4
+]
+
+
+export const NewBlock = [
+    { 
+        class_name: "GF1",
+        class_size: 200,
+        is_available: true,
+        index: 0,
     },
-    {
-        venue: "GF1",
-        ongoing: true,
-        classSize: 1000,
-        index: 5
+    { 
+        class_name: "FF1",
+        class_size: 300,
+        is_available: true,
+        index: 1,
     },
-    {
-        venue: "NEB FF1",
-        ongoing: true,
-        classSize: 1200,
-        index: 6
+    { 
+        class_name: "SF1",
+        class_size: 120,
+        is_available: false,
+        index: 2,
     },
-    {
-        venue: "NEB SF1",
-        ongoing: false,
-        classSize: 1200,
-        index: 3
-    },
-    {
-        venue: "GF1",
-        ongoing: true,
-        classSize: 1000,
-        index: 5
-    },
-    {
-        venue: "NEB FF1",
-        ongoing: true,
-        classSize: 1200,
-        index: 6
-    },
-    {
-        venue: "NEB SF1",
-        ongoing: false,
-        classSize: 1200,
-        index: 3
+    { 
+        class_name: "SF2",
+        class_size: 250,
+        is_available: true,
+        index: 3,
     },
 ]

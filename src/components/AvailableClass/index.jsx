@@ -1,6 +1,5 @@
 import "./AvailableClass.css"
-import { ClassSection } from "./constants"
-
+import { NewBlock, petroleumBuilding } from "./constants"
 
 
 
@@ -18,12 +17,29 @@ export default function index() {
             </div>
 
             <section className="classess__wrapper">
-                {ClassSection.map((each_class) => (
-                    <div className={`${each_class.ongoing ? `ongoing__class` : 'available__class'} class`}>
-                        <h1 className="venue">{ each_class.venue }</h1>
-                        <h1 className="class">{ each_class.classSize }</h1>
+                <div className="petroleum__building">
+                    <h1 className="petroleum__title">Petroleum Building</h1>
+                    <div className="petroleum">
+                        { petroleumBuilding.map((build) => (
+                            <div key={build.index} className={`${build.is_available ? `ongoing__class` : `available__class`}`}>
+                                <h4>{ build.class_name }</h4>
+                                <h5>{build.class_size}</h5>
+                            </div>
+                        ))} 
                     </div>
-                ))}
+                </div>
+
+                <div className="newblock__building">
+                    <h1 className="newblock__title">New Block</h1>
+                    <div className="newblock">
+                        { NewBlock.map((build) => (
+                            <div key={build.index} className={`${build.is_available ? `ongoing__class` : `available__class`}`}>
+                                <h4>{ build.class_name }</h4>
+                                <h5>{build.class_size}</h5>
+                            </div>
+                        )) }
+                    </div>
+                </div>
             </section>
         </section>
     )
