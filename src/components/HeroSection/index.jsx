@@ -1,32 +1,34 @@
 import "./HeroSection.css";
-import Tour from "../../assets/images/tour.jpg";
-import CarouselSlider from "./CarouselSlider";
-
-// import { useRef } from "react";
-
-
+import { useRef } from "react";
+import { HeroSection } from "./constants";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 
 export default function index() {
-    // const scrollRef = useRef(null);
+    const divRef = useRef(null);
 
-    // function scroll(direction) {
+    function scroll(direction) {
+        const { current } = divRef;
 
-    //     console.log("clicked")
-    //    const { current } = scrollRef;
-
-    //    if (direction === "left") {
-    //     current.scrollLeft -= 1750
-    //    } else {
-    //     current.scrollLeft += 1750
-    //    }
-    // }
+        if(direction === "left"){
+            current.scrollLeft -= 1905;
+          }
+          else{
+            current.scrollLeft += 1905;
+          }
+    
+        }
 
     return (
-        <section className="HeroSection">
-            {/* <img src={Tour} alt="background image" className="background--heroSection" /> */}
-            <CarouselSlider />
-
+        <section className="HeroSection__wrapper" ref={divRef}>
+            { HeroSection.map((item) => (
+                <div key={item.index} className="image__wrapper">
+                    <img src={item.image} className="HeroSection--image" />
+                    <AiOutlineLeft onClick={() => scroll("left")} className="left-arrow"/>
+                    <AiOutlineRight onClick={() => scroll("right")} className="right-arrow"/>
+                </div>
+            )) }
         </section>
     )
+
 }

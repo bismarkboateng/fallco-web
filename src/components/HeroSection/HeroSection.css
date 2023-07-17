@@ -1,53 +1,36 @@
-.HeroSection {
-    display: inline-flex;
-    width: 100%;
+.HeroSection__wrapper {
+    width: 1905px;
     height: 500px;
-    margin-top: 20px;
-    /* margin-left: 90px; */
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
-
-    border: 1px solid red;
-}
-
-.background--heroSection {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-    height: inherit;    
-}
-
-.HeroSection--wrapper {
     position: relative;
-    width: inherit;
-    height: inherit;
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 30px;
-
-    border: 1px solid red;
 }
 
 .HeroSection--content_wrapper {
     background-color: white;
-
     padding: 0px 10px 10px 10px;
     border-radius: 5px;
     width: 50%;
-
 }
 
-.Graduation__video {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    background-color: #271e3d;
+.image__wrapper {
+    width: 1905px;
+}
 
-    color: #fff;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 15px;
-    cursor: pointer;
+.HeroSection--image {
+    width: 1905px;
+    object-fit: contain;
+}
+
+.best__student__wrapper {
+    position: absolute;
+    background: green;
+    z-index: 10;
+    top:20%;
+    left: 100px;
+    height: 300px;
+    width: 700px;
 }
 
 .right-arrow {
@@ -55,9 +38,10 @@
     color: #fff;
     font-size: 40px;
     margin-right: 10px;
-    top: 50%;
+    top: 35%;
     right: 0;
     cursor: pointer;
+    transition: all 0.14s ease;
 }
 
 .left-arrow {
@@ -65,22 +49,18 @@
     color: #fff;
     font-size: 40px;
     margin-right: 10px;
-    top: 50%;
+    top: 35%;
     left: 0;
     cursor: pointer;
+    transition: font-weight 0.14s ease;
 }
 
-
-.right-arrow:hover,
-.left-arrow:hover {
-    font-size: 50px;
-    transition: font-size 0.2s ease-in;
+.left-arrow:hover,
+.right-arrow:hover {
+    font-weight: 900;
+    color: rgb(145, 121, 121);   
 }
 
-.best__student {
-    width: 50%;
-    border-radius: 5px;
-}
 
 @media  screen and (max-width: 550px) {
 

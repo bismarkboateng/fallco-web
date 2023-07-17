@@ -1,22 +1,14 @@
-import studentImage from "../../assets/images/student-image.jpeg";
+import { Slider01, Slider02 } from "../../assets"
 
 export const HeroSection = [
     {
-        title: "Department of Computer Engineering",
-        studentName: "Bismark",
-        studentImg: studentImage,
+        title: "Slider01",
+        image: Slider01,
         index: 0
     },
     {
-        title: "Department of Electrical Engineering",
-        studentName: "Bismark",
-        studentImg: studentImage,
-        index: 1
-    },
-    {
-        title: "Department of Telecom Engineering",
-        studentName: "Bismark",
-        studentImg: studentImage,
-        index: 2
+        title: "Slider01",
+        image: Slider02,
+        index: 0
     }
 ]
