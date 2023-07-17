@@ -10,42 +10,45 @@ export default function index() {
     })
 
     
-    function onHandleSelectChange() {
-        console.log("Handle Select form change")
+    function onHandleSelectChange(event) {
+        setLoginDetails(prevDetails => {
+            return { ...prevDetails, Department: event.target.value }
+        })
     }
 
     function onHandleIdChange(event) {
-        console.log(event.target.value)
+        setLoginDetails(prevDetails => {
+            return { ...prevDetails, RepId: event.target.value }
+        })
     }
+
     
     function onHandleFormSubmit(event) {
         event.preventDefault();
-        console.log("Handle Form submit")
+        // send data to backend api 
+        console.log(loginDetails)
     }
 
     return (
         <div className="RepLogin--component">
             <h2 className="RepLogin--header">Class Rep Login</h2>
             <div className="RepLogin--header__underline"/>
-
             <form className="RepLogin--form" onSubmit={onHandleFormSubmit}>
                 <label className="input--title">Rep ID</label> <br /> <br />
                 <input 
                     className="RepLogin--formId"
+                    placeholder="Rep Id"
                     value={loginDetails.RepId}
                     onChange={onHandleIdChange}
                 /> <br />
                 <select className="RepLogin--select_fields"
                     onChange={onHandleSelectChange}
                 >
-                    {/* <h4 className="RepLogin--select_fields-title">Select Department</h4> */}
                     <option>COE</option>
                     <option>TE</option>
                     <option>EE</option>
-                </select>
-                
+                </select> 
                 <br />
-
                 <button className="RepLogin__submit-btn" onClick={onHandleFormSubmit}>
                     Submit
                 </button>
