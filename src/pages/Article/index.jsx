@@ -2,9 +2,13 @@ import "./Article.css"
 import Div from "../../components/Div";
 import { Articles } from "./constants";
 import { Link } from "react-router-dom";
+import useFetch from "../../CustomHooks/useFetch"
 
 
 export default function index() {
+    const data = useFetch("articles")
+    console.log(data)
+
     return (
         <section className="article--content">
             <h1 className="article--header">
