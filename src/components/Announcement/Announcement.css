@@ -18,7 +18,10 @@
     border-radius: 5px;
 
     cursor: pointer;
+}
 
+.announcement--btn:hover {
+    opacity: 0.9;
 }
 
 .announcement--btn_title {

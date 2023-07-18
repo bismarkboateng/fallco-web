@@ -19,10 +19,15 @@
     font-weight: 900;
 }
 
+.action--btn:hover {
+    opacity: 0.9;
+}
+
 .action--btn_container {
     display: flex;
     flex-direction: column;
 }
+
 
 .action--header {
     color: #271e3d;

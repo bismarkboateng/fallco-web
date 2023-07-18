@@ -1,9 +1,13 @@
 import { useState } from "react";
 import "./RepLogin.css"
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 
 export default function index() {
+    const navigate = useNavigate();
+
+
     const [loginDetails, setLoginDetails] = useState({
         RepId: "",
         Department: ""
@@ -26,7 +30,9 @@ export default function index() {
     function onHandleFormSubmit(event) {
         event.preventDefault();
         // send data to backend api 
-        console.log(loginDetails)
+
+        // after computation, move to the class alloc
+        navigate("/locate-class")
     }
 
     return (

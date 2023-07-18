@@ -21,6 +21,10 @@
     cursor: pointer;
 }
 
+.RepLogin__submit-btn:hover {
+    opacity: 0.9;
+}
+
 .RepLogin--select_fields {
     padding: 10px 116px;
     border-radius: 5px;
