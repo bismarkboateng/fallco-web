@@ -4,7 +4,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 
 
 
-export default function index() {
+export default function index({ setIsClassRep }) {
     const navigate = useNavigate();
 
 
@@ -32,6 +32,7 @@ export default function index() {
         // send data to backend api 
 
         // after computation, move to the class alloc
+        setIsClassRep(true);
         navigate("/locate-class")
     }
 
@@ -59,6 +60,10 @@ export default function index() {
                     Submit
                 </button>
             </form>
+
+            <p style={{ color: "blue", marginTop: "100", fontSize: "12px"}}>
+                Ask HOD for your Rep ID
+            </p>
         </div>
     )
 }

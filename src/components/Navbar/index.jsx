@@ -8,7 +8,7 @@ import NavLinks from "./NavLinks";
 
 
 
-export default function index() {
+export default function index({ isClassRep }) {
     const [mobileMenu, setMobileMenu] = useState(false)
 
     function toggleMobileMenu() {
@@ -32,7 +32,7 @@ export default function index() {
 
                 { mobileMenu && (
                     <ul className="navbarmobile--links">
-                        <NavLinks />
+                        <NavLinks isClassRep={isClassRep}/>
                     </ul>
                 )}
             </nav>
