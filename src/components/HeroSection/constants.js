@@ -9,6 +9,6 @@ export const HeroSection = [
     {
         title: "Slider01",
         image: Slider02,
-        index: 0
+        index: 1
     }
 ]

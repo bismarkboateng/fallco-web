@@ -10,8 +10,8 @@ export default function index() {
                 <small style={{ fontWeight: "400", fontSize: "14px", marginBottom: "5px"}}>13 Feb 2013</small>
                 ALUMNI ARTICLESNEW RESEARCH WILL HELP PATIENTS SUFFERING <br />DEBILITATING AFTER-EFFECTS OF TROPICAL VIRAL INFECTION
                 <p style={{ marginTop: "10px"}}>
-                    <Div />
                 </p>
+                <Div />
             </h1>
 
             <div className="article__wrapper">

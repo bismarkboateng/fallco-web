@@ -1,6 +1,6 @@
-import { useState } from "react";
 import "./RepLogin.css"
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 
 
@@ -35,6 +35,7 @@ export default function index({ setIsClassRep }) {
         setIsClassRep(true);
         navigate("/locate-class")
     }
+
 
     return (
         <div className="RepLogin--component">
