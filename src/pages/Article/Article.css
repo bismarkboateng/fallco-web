@@ -44,12 +44,17 @@
 .read--article {
     cursor: pointer;
     transition: text-decoration 0.12s;
+    background: rgb(31, 31, 219);
+    width: 110px;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+
+    transition: all 0.3s ease;
 }
 
 .read--article:hover {
-    text-decoration: underline;
-
-    font-weight: 600;
+    opacity: 0.8;
 }
 
 .article--title {

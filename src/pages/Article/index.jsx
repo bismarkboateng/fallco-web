@@ -23,14 +23,16 @@ export default function index() {
                         <img src={article.image} alt="article image" className="article--image" />
                         <div className="article--info">
                             <h5 className="article--date">{ article.Date }</h5>
-                            <Link to="/article-detail" style={{ textDecoration: "none"}}>
+                            <Link to={article.link} style={{ textDecoration: "none"}}>
                                 <div className="article--title">{ article.Title }</div>
                             </Link>
                             <Div />
                             <p className="arti--content">{ article.content } </p>
-                            <p className="read--article">
-                                Read Article
-                            </p>
+                            <Link to={article.link} style={{ textDecoration: "none"}}>
+                                <p className="read--article">
+                                    Read Article
+                                </p>
+                            </Link>
                         </div>
                     </div>
                 )) }
