@@ -3,6 +3,8 @@
 }
 
 body {
+    max-width: 100rem;
+    width: clamp(320px, 100%, 100rem);
     margin: 0;
     padding: 0;
     font-family: Arial,Helvetica,sans-serif;
@@ -15,5 +17,4 @@ body {
 .footer--div {
     height: 3px;
     background-color: #005d8f;
-    width: 30px;
 }

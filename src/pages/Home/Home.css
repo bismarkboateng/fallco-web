@@ -1,3 +1,12 @@
+.home_block {
+    max-width: 1420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
 .announcement--action_block {
     width: 80%;
     margin: auto;
@@ -10,7 +19,7 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 768px) and (min-width: 480px), screen and (max-width: 1420px) {
     .announcement--action_block {
         font-size: 11px;
 

@@ -1,11 +1,13 @@
 .HeroSection__wrapper {
-    width: 1905px;
+    max-width: 100rem;
+    width: clamp(320px, 98.7vw, 100rem);
     height: 500px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     position: relative;
 }
+
 
 .HeroSection--content_wrapper {
     background-color: white;
@@ -15,13 +17,13 @@
 }
 
 .image__wrapper {
-    width: 1905px;
+    min-width: 100em;
 }
-
 .HeroSection--image {
-    width: 1905px;
+    max-width: 100em;
     object-fit: contain;
 }
+
 
 .best__student__wrapper {
     position: absolute;
@@ -62,7 +64,7 @@
 }
 
 
-@media  screen and (max-width: 550px) {
+@media (max-width: 768px) and (min-width: 480px), screen and (max-width: 1420px) {
 
     .HeroSection {
         display: inline-block;
