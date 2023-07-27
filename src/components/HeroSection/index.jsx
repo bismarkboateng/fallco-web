@@ -1,34 +1,20 @@
 import "./HeroSection.css";
-import { useRef } from "react";
-import { HeroSection } from "./constants";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import Carousel from "../Carousel";
+import {images} from "./constants"
 
 
-export default function index() {
-    const divRef = useRef(null);
-
-    function scroll(direction) {
-        const { current } = divRef;
-
-        if(direction === "left"){
-            current.scrollLeft -= 1905;
-          }
-          else{
-            current.scrollLeft += 1905;
-          }
-    
-        }
+const HeroSection = () => {
 
     return (
-        <section className="HeroSection__wrapper" ref={divRef}>
-            { HeroSection.map((item) => (
-                <div key={item.index} className="image__wrapper">
-                    <img src={item.image} className="HeroSection--image" />
-                    <AiOutlineLeft onClick={() => scroll("left")} className="left-arrow"/>
-                    <AiOutlineRight onClick={() => scroll("right")} className="right-arrow"/>
-                </div>
-            )) }
-        </section>
-    )
-
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome To College Of Engineering</h1>
+      </header>
+      <main>
+        <Carousel images={images} />
+      </main>
+    </div>
+  );
 }
+
+export default HeroSection;

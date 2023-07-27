@@ -8,7 +8,7 @@ export default function NavLinks({ isClassRep }) {
 
     return (
         <>
-            <NavLink className="active" to="/"
+            <NavLink className="actives" to="/"
                 style={({isActive}) => {
                     return { fontWeight: isActive ? "bold" : "",}
                 }}
@@ -16,7 +16,7 @@ export default function NavLinks({ isClassRep }) {
                  <li className="navbar-li">Home</li>    
             </NavLink>
 
-            <NavLink className="active" to="/articles"
+            <NavLink className="actives" to="/articles"
             style={({isActive}) => {
                 return { fontWeight: isActive ? "bold" : "",}
             }}
@@ -24,7 +24,7 @@ export default function NavLinks({ isClassRep }) {
             <li className="navbar-li">Articles</li>    
             </NavLink>
 
-            <NavLink className="active" to="/department" style={({isActive}) => {
+            <NavLink className="actives" to="/department" style={({isActive}) => {
                     return { fontWeight: isActive ? "bold" : "",} 
                 }}
             >
@@ -33,7 +33,7 @@ export default function NavLinks({ isClassRep }) {
             
             {
                 isClassRep && (
-                    <NavLink className="active" to="/class-rep-login" style={({isActive}) => {
+                    <NavLink className="actives" to="/class-rep-login" style={({isActive}) => {
                             return { fontWeight: isActive ? "bold" : "",} 
                         }}
                     >
@@ -42,7 +42,7 @@ export default function NavLinks({ isClassRep }) {
                 )
             }
 
-            <NavLink className="active" to="/class-rep-login"
+            <NavLink className="actives" to="/class-rep-login"
                 style={({isActive}) => {
                     return { fontWeight: isActive ? "bold" : "",}
                 }}
