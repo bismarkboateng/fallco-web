@@ -3,8 +3,8 @@
 }
 
 body {
-    max-width: 100rem;
-    width: clamp(320px, 100%, 100rem);
+    max-width: 150rem;
+    width: clamp(320px, 100%, 150rem);
     margin: 0;
     padding: 0;
     font-family: Arial,Helvetica,sans-serif;
