@@ -19,6 +19,7 @@ export default function index() {
                 { Articles.map((article) => (
                     <div key={article.index} className="article"
                         style={index !== index.length - 1 ? { marginBottom: "80px" } : { marginBottom: "0px" }}
+                        data-aos="fade-up" data-aos-duration="3000"
                     >
                         <img src={article.image} alt="article image" className="article--image" />
                         <div className="article--info">

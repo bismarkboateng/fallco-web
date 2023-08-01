@@ -1,7 +1,7 @@
 export const Links = [
     {
-        name: "Field trips",
-        link: "",
+        name: "About",
+        link: "/department",
         index: 0
     },
     {
@@ -13,15 +13,10 @@ export const Links = [
         name: "Classes",
         link: "/locate-class",
         index: 2
-    },
-    {
-        name: "Graduation",
-        link: "",
-        index: 3
     },  
     {
         name: "Department",
         link: "/department",
-        index: 4
+        index: 3
     }
 ]

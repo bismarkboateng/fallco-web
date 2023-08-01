@@ -5,19 +5,37 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+
+    cursor: pointer;
+    
+    /* animation: slide 1s ease; */
 }
 
 .department__news-image {
     border-radius: 5px;
     width: 300px;
+    animation: slide 1s ease;
+
 }
 
 .department__news__wrapper {
     display: flex;
     flex-direction: column;
+
+
 }
 
 
+
+@keyframes slide {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 300px;
+    }
+}
 
 
 @media screen and (max-width: 576px) {

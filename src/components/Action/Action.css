@@ -17,6 +17,12 @@
     color: #fff;
     font-size: 18px;
     font-weight: 900;
+
+
+    animation-name: blur-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-delay: 0.1s;
 }
 
 .action--btn:hover {
@@ -31,6 +37,16 @@
 
 .action--header {
     color: #271e3d;
+}
+
+@keyframes blur-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 550px) {
